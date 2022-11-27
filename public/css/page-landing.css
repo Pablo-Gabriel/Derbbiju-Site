@@ -1,0 +1,128 @@
+#page-landing{
+    text-align: center;
+    min-height: 100vh;
+
+    display: flex;
+
+
+    background-color: white;
+    background: url("../image/paper-flower-background-4794429_1920.jpg")
+    no-repeat 80%;
+
+    background-size: cover;
+}
+
+
+
+#container {
+    margin: auto;
+
+    width: min(90%, 112rem);
+}
+
+#container .rodape 
+h1,
+p {
+    height: 16vh;
+}
+
+#container .rodape h1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #ffdd48;
+
+    filter: contrast(80%);
+}
+
+#container .rodape p {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+
+    margin: auto;
+
+    color: #ffdd48;
+
+    filter: contrast(70%);
+}
+
+#bottom .bottom a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+
+    height: 6rem;
+    width: 8rem;
+
+    background-color: #FBF6BD;
+    border-radius: 2rem;
+    opacity: 80%;    
+
+    text-decoration: none;
+    
+    color: gray;
+
+    transition: background 250ms;
+}
+
+#bottom .bottom a:hover {
+    background-color: #ffdd48;
+}
+
+/*Desktop version*/
+@media (min-width: 760px) {
+    #page-landing {
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        background-image: url("../image/paper-flower-background-4794429_1920.jpg");
+        background-size: cover;
+    }
+
+    #container {
+        padding: 5rem 2rem;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rodape, 
+    h1,
+    .bottom {
+        height: initial;
+        text-align: initial;
+    }
+
+    main h1 {
+        line-height: 2.4rem;
+        
+        margin: clamp(10%, 9vh, 12%) 0 4rem;
+
+        width: min(300px, 80%);    
+    }
+
+    .rodape {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bottom a {
+        margin: initial;
+        text-align: center;
+    }
+}

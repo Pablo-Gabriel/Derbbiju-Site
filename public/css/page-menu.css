@@ -1,0 +1,121 @@
+#page-menu{
+    text-align: center;
+    min-height: 100vh;
+
+    display: flex;
+
+
+    background-color: white;
+    background: url("../image/paper-flower-background-4794429_1920.jpg")
+    no-repeat 80%;
+
+    background-size: cover;
+}
+
+#container {
+    margin: 1.2rem auto;
+
+    align-items: initial;
+    text-align: start;
+
+    width: min(90%, 112rem);
+}
+
+#container p {
+    font-size: 2.5rem;
+    height: 2.3rem;
+    color:  #ffdd48;
+
+    filter: contrast(70%);
+}
+
+#container #opcoes hr {
+    margin: 0;
+}
+
+p {
+    height: 16vh;
+}
+
+
+#opcoes a {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3rem;
+
+    margin: auto;
+
+    text-decoration: none;
+    
+    color: gray;
+}
+
+#container .boasvindas {
+    margin: 1.2rem 0 0 0;
+    display: flex;
+
+    align-items: center;
+    text-align: center;
+}
+
+#container .boasvindas h1 {
+    font-size: 2rem;
+
+    color:  #ffdd48;
+
+    filter: contrast(70%);
+}
+
+/*Desktop version*/
+@media (min-width: 760px) {
+    #page-landing {
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        background-image: url("../image/paper-flower-background-4794429_1920.jpg");
+        background-size: cover;
+    }
+
+    #container {
+        padding: 5rem 2rem;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rodape, 
+    h1,
+    .bottom {
+        height: initial;
+        text-align: initial;
+    }
+
+    main h1 {
+        line-height: 2.4rem;
+        
+        margin: clamp(10%, 9vh, 12%) 0 4rem;
+
+        width: min(300px, 80%);    
+    }
+
+    .rodape {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bottom a {
+        margin: initial;
+        text-align: center;
+    }
+}
